@@ -3,9 +3,10 @@ pragma solidity ^0.4.24;
 
 
 contract TWTD  {
-    string public name;
-    string public symbol;
+    string public name = "Taiwan Token";
+    string public symbol = "TWTD";
     uint8 public decimals = 0;
+    uint256 public _initialsupply =50000;
     uint256 public totalSupply;
     
     mapping (address => uint256) public balanceOf;
@@ -17,11 +18,9 @@ contract TWTD  {
     
     
     
-    constructor TWTD(string _name, string _symbol, uint256 _initialsupply) public {
+    constructor () public {
         totalSupply = _initialsupply * 10 ** uint256(decimals);
         balanceOf[msg.sender] = totalSupply;
-        name = _name;
-        symbol = _symbol;
     }
     
     using SafeMath for uint256;
