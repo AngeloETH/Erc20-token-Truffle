@@ -12,7 +12,13 @@
  *   },
  */
 
-module.exports = {
+ 
+// MetaMask -> Settings -> reveal seed words
+
+//module.exports = {
   // See <http://truffleframework.com/docs/advanced/configuration>
   // to customize your Truffle configuration!
-};
+ // networks: {
+    
+  //}
+//};
